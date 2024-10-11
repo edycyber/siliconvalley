@@ -4,292 +4,107 @@
 <title>Open Silicon Valley - Your Gateway to Startup Success</title>
 <link rel="shortcut icon" href="opensilicon.ico">
 <style>
-  :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #f39c12;
-    --text-color: #333;
-    --bg-color: #f4f4f4;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: var(--primary-color);
-  }
-  
-  .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    margin-top: 80px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 30px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #fff;
-    color: var(--primary-color);
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-  }
-  
-  .features {
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  .features h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-  }
-  
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  
-  .feature {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .feature:hover {
-    transform: translateY(-5px);
-  }
-  
-  .feature i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
-  
-  .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .podcasts {
-    padding: 80px 0;
-    background-color: #fff;
-  }
-  
-  .podcasts h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .podcast-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-  }
-  
-  .podcast-card {
-    background-color: var(--bg-color);
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .podcast-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .podcast-image, {
+   body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header .logo {
+            float: left;
+            font-size: 24px;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        .hero {
+            min-height: 400px;
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+            background: #e8491d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .features, .podcasts, .resources, .newsletter {
+            padding: 50px 0;
+        }
+        .feature-grid, .podcast-grid, .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .feature, .podcast-card, .resource-card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .podcast-image, .resource-image {
             max-width: 100%;
             height: auto;
-  }
-  
-  .podcast-content {
-    padding: 20px;
-  }
-  
-  .podcast-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-  }
-  
-  .podcast-content p {
-    margin-bottom: 20px;
-  }
-  
-  .podcast-buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .podcast-button {
-    padding: 8px 16px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .youtube-button {
-    background-color: #ff0000;
-    color: #fff;
-  }
-  
-  .youtube-button:hover {
-    background-color: #cc0000;
-  }
-  
-  .amazon-button {
-    background-color: #232f3e;
-    color: #fff;
-  }
-  
-  .amazon-button:hover {
-    background-color: #131921;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .floating-button {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 1000;
-  }
-
-  .floating-button:hover {
-    background-color: #e67e22;
-    transform: translateY(-3px);
-  }
-
-  .floating-button i {
-    font-size: 20px;
-  }
-
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-    
-    .hero h1 {
-      font-size: 2rem;
-    }
-    
-    .hero p {
-      font-size: 1rem;
-    }
-    
-    .features h2, .podcasts h2 {
-      font-size: 2rem;
-    }
-
-    .floating-button {
-      right: 10px;
-      bottom: 10px;
-      padding: 10px 15px;
-      font-size: 14px;
-    }
-
-    .floating-button i {
-      font-size: 18px;
-    }
-  }
+        }
+        .podcast-buttons {
+            margin-top: 10px;
+        }
+        .podcast-button, .resource-button {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 3px;
+        }
+        .youtube-button {
+            background: #ff0000;
+        }
+        .amazon-button {
+            background: #232f3e;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
 </style>
 </head>
 <body>
