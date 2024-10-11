@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Silicon Valley</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header .logo {
+            float: left;
+            font-size: 24px;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        .hero {
+            min-height: 400px;
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+            background: #e8491d;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .features, .podcasts, .resources, .newsletter {
+            padding: 20px 0;
+        }
+        .feature-grid, .podcast-grid, .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .feature, .podcast-card, .resource-card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .podcast-image, .resource-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .podcast-buttons {
+            margin-top: 10px;
+        }
+        .podcast-button, .resource-button {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 3px;
+        }
+        .youtube-button {
+            background: #ff0000;
+        }
+        .amazon-button {
+            background: #232f3e;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Open Silicon Valley</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="https://music.amazon.com/podcasts/86dac32d-8869-47fb-9030-5fe046e02359">Podcasts</a></li>
+                    <li><a href="https://opensiliconvalleyai.substack.com">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Unlock the Secrets of Silicon Valley Success</h1>
+                <p>Join our community of aspiring entrepreneurs and learn how to build the next big startup.</p>
+                <a href="https://music.amazon.com/podcasts/86dac32d-8869-47fb-9030-5fe046e02359" class="cta-button">Explore Our Podcasts</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose Open Silicon Valley AI?</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h3>Expert Insights</h3>
+                        <p>Learn from successful founders and industry leaders.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Thriving Community</h3>
+                        <p>Connect with like-minded entrepreneurs and collaborators.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Innovative Strategies</h3>
+                        <p>Discover cutting-edge techniques to grow your startup.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Proven Results</h3>
+                        <p>Apply battle-tested methods for startup success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="podcasts" class="podcasts">
+            <div class="container">
+                <h2>Our Featured Podcasts</h2>
+                <div class="podcast-grid">
+                    <div class="podcast-card">
+                        <img src="silicon3.jpg" alt="HOW TO SUCCEED WITH A STARTUP IN 2024" class="podcast-image">
+                        <div class="podcast-content">
+                            <h3>HOW TO SUCCEED WITH A STARTUP IN 2024 | KEY STRATEGIES FOR STARTUP</h3>
+                            <p>Thinking about launching your startup in 2024? In this video, we break down the essential steps to help you succeed in the competitive startup landscape. 🚀</p>
+                            <div class="podcast-buttons">
+                                <a href="https://youtu.be/ARwwyqfs_LM" class="podcast-button youtube-button">YouTube</a>
+                                <a href="https://music.amazon.com/podcasts/86dac32d-8869-47fb-9030-5fe046e02359/episodes/c7abd850-2a98-4f3e-aebf-6f7aa91441cb/how-to-succeed-with-a-startup-in-2024-key-strategies-for-startup-growth" class="podcast-button amazon-button">Amazon Music</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more podcast cards here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <div class="container">
+                <h2>Resources for Founders</h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <img src="podcast1.jpg" alt="Create a Idea to Business" class="resource-image">
+                        <div class="resource-content">
+                            <h3>Create a Idea to Business</h3>
+                            <p>Learn the pros and cons of different funding sources for your startup.</p>
+                            <a href="https://www.youtube.com/watch?v=startup-funding-101" class="resource-button youtube-button">YouTube</a>
+                        </div>
+                    </div>
+                    <!-- Add more resource cards here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div class="container">
+                <h2>Subscribe to our Newsletter for FREE</h2>
+                <p>Welcome to Open Silicon Valley AI. At the heart of innovation and technology, Open Silicon Valley AI is your gateway to exploring the dynamic world of tech, startups, and entrepreneurship. Get insights into the latest trends in Silicon Valley.</p>
+                <a href="https://opensiliconvalleyai.substack.com" class="cta-button">Subscribe Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Open Silicon Valley. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
