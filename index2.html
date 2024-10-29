@@ -1,0 +1,533 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Silicon Valley - Your Gateway to Startup Success</title>
+<link rel="shortcut icon" href="opensilicon.ico">
+<style>
+   :root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f39c12;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 80px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .features {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .podcasts {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .podcasts h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .podcast-card {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .podcast-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .podcast-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+  
+  .podcast-content {
+    padding: 20px;
+  }
+  
+  .podcast-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .podcast-content p {
+    margin-bottom: 20px;
+  }
+  
+  .podcast-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .podcast-button {
+    padding: 8px 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .youtube-button {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .youtube-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .amazon-button {
+    background-color: #232f3e;
+    color: #fff;
+  }
+  
+  .amazon-button:hover {
+    background-color: #131921;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .floating-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .floating-button:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+  }
+
+  .floating-button i {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+    
+    .features h2, .podcasts h2 {
+      font-size: 2rem;
+    }
+
+    .floating-button {
+      right: 10px;
+      bottom: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+
+    .floating-button i {
+      font-size: 18px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Open Silicon Valley</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="https://music.amazon.com/podcasts/86dac32d-8869-47fb-9030-5fe046e02359">Podcasts</a></li>
+        <li><a href="https://opensiliconvalleyai.substack.com">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Unlock the Secrets of Silicon Valley Success</h1>
+        <p>Join our community of aspiring entrepreneurs and learn how to build the next big startup.</p>
+        <a href="https://music.amazon.com/podcasts/86dac32d-8869-47fb-9030-5fe046e02359" class="cta-button">Explore Our Podcasts</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why Choose Open Silicon Valley AI?</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <i class="fas fa-rocket"></i>
+            <h3>Expert Insights</h3>
+            <p>Learn from successful founders and industry leaders.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-users"></i>
+            <h3>Thriving Community</h3>
+            <p>Connect with like-minded entrepreneurs and collaborators.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Innovative Strategies</h3>
+            <p>Discover cutting-edge techniques to grow your startup.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h3>Proven Results</h3>
+            <p>Apply battle-tested methods for startup success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcasts" class="podcasts">
+      <div class="container">
+        <h2>Our Featured Podcasts</h2>
+        <div class="podcast-grid">
+          <div class="podcast-card">
+            <img src="silicon1.jpg" alt="HOW TO SUCCEED WITH A STARTUP IN 2024" class="podcast-image">
+            <div class="podcast-content">
+              <h3>HOW TO SUCCEED WITH A STARTUP IN 2024 | KEY STRATEGIES FOR STARTUP</h3>
+              <p>Thinking about launching your startup in 2024? In this video, we break down the essential steps to help you succeed in the competitive startup landscape. 🚀</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon4.jpg" alt="Building a Winning Team: Hiring Strategies for Startups" class="podcast-image">
+            <div class="podcast-content">
+              <h3>A GUIDE TO SEED FUNDRAISING</h3>
+              <p>Ready to kickstart your startup with seed funding? In this video, we dive deep into the world of seed fundraising, guiding you step-by-step on how to raise your first round of capital. 💡💰</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon5.jpg" alt="From Idea to MVP: Rapid Prototyping Techniques" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Mark Zuckerberg on Building a Startup</h3>
+              <p>In this exclusive video, Mark Zuckerberg, the founder and CEO of Meta (formerly Facebook), shares his insights and experiences on building a successful startup from the ground up. 💡🚀</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon6.jpg" alt="Growth Hacking: Scaling Your Startup on a Budget" class="podcast-image">
+            <div class="podcast-content">
+              <h3>How to Find Product Market Fit</h3>
+              <p>Struggling to find Product-Market Fit? In this video, we break down the essential steps to help you discover the right market for your product and create something that truly resonates with your target audience. 🎯</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon7.jpg" alt="The Art of Pitching: Winning Over Investors" class="podcast-image">
+            <div class="podcast-content">
+              <h3>How to Apply and Succeed at Y Combinator</h3>
+              <p>Dreaming of joining Y Combinator? In this video, we walk you through the entire application process and share key tips on how to stand out and succeed in one of the world’s most prestigious startup accelerators. 🚀</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon8.jpg" alt="Navigating Legal Challenges for Tech Startups" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Save Your Startup During an Economic Downturn</h3>
+              <p>In uncertain times, your startup faces unique challenges. In this video, we discuss effective strategies to help you navigate an economic downturn and keep your business thriving. 📉💪</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon9.jpg" alt="Product-Market Fit: The Holy Grail of Startups" class="podcast-image">
+            <div class="podcast-content">
+              <h3>How to Change the World</h3>
+              <p>Have you ever dreamed of making a positive impact on the world? In this video, we explore actionable steps you can take to create meaningful change in your community and beyond. 🌍✨</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon10.jpg" alt="The Future of Work: Building a Remote-First Startup" class="podcast-image">
+            <div class="podcast-content">
+              <h3>The 18 Mistakes That Kill Startups | Avoid These Pitfalls to Succeed</h3>
+              <p>Starting a business is tough, and many startups fail due to common but avoidable mistakes. In this video, we reveal the 18 most critical mistakes that can kill a startup and share practical advice on how to avoid them. 🚀💡</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon11.jpg" alt="Mastering Startup Finances: From Bootstrapping to Series A" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Masterclass on Stanford’s Most Popular Leadership Course | Unlock Your Leadership Potential</h3>
+              <p>Ready to take your leadership skills to the next level? In this masterclass, we dive into key lessons from Stanford University’s most popular leadership course, revealing insights that have shaped some of the world’s top leaders. 🌟📚</p>
+              <div class="podcast-buttons">
+                <a href="y2.html" class="podcast-button youtube-button">See Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcasts" class="podcasts">
+      <div class="container">
+        <h2>Resources for Founders</h2>
+        <div class="podcast-grid">
+          <div class="podcast-card">
+            <img src="silicon13.jpg" alt="Startup Funding 101: Angel Investors vs VCs" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Validate your idea with a landing page</h3>
+              <p>The best way to validate an idea is with a landing page. This way, you can make sure that what you are going to build has a potential market, while generating leads.🚀💡</p>
+              <div class="podcast-buttons">
+                <a href="https://sparrow-ai.online/" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon14.jpg" alt="Building a Winning Team: Hiring Strategies for Startups" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Create a SAAS with template</h3>
+              <p>Everything you need to build your SAAS with open source🌟📚</p>
+              <div class="podcast-buttons">
+                <a href="https://opensaas.sh/" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <img src="silicon15.jpg" alt="From Idea to MVP: Rapid Prototyping Techniques" class="podcast-image">
+            <div class="podcast-content">
+              <h3>UI to Code</h3>
+              <p>Convert your design to code🌟</p>
+              <div class="podcast-buttons">
+                <a href="https://github.com/Doriandarko/gemini-ui-to-code" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>
+         <div class="podcast-card">
+            <img src="silicon16.jpg" alt="From Idea to MVP: Rapid Prototyping Techniques" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Find your investor for your Startup</h3>
+              <p>Investor database💰</p>
+              <div class="podcast-buttons">
+                <a href="https://mercury.com/investor-database" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>
+         <div class="podcast-card">
+            <img src="silicon17.jpg" alt="From Idea to MVP: Rapid Prototyping Techniques" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Find your co-founder</h3>
+              <p>Don't start a startup alone, it's better to have a founder who complements what you can't do. Technical founder and administrative founder💪</p>
+              <div class="podcast-buttons">
+                <a href="https://www.coffeespace.com/" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>
+           <div class="podcast-card">
+            <img src="silicon18.jpg" alt="From Idea to MVP: Rapid Prototyping Techniques" class="podcast-image">
+            <div class="podcast-content">
+              <h3>Marketing Tool</h3>
+              <p>Marketing is important for a new startup, here is a tool that can help you with it🚀</p>
+              <div class="podcast-buttons">
+                <a href="https://mercury.com/investor-database" class="podcast-button youtube-button">Get Resource</a>
+              </div>
+            </div>
+          </div>    
+          </div>
+      </div>
+    </section>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Subscribe to our Newsletter for FREE</h1>
+        <p>Welcome to Open Silicon Valley AI At the heart of innovation and technology, Open Silicon Valley AI is your gateway to exploring the dynamic world of tech, startups, and entrepreneurship. Get insights into the latest trends in Silicon Valley.</p>
+        <a href="https://opensiliconvalleyai.substack.com" class="cta-button">Subscribe</a>
+      </div>
+    </section>
+ 
+  </main>
+
+  <button id="gift-button" class="floating-button" onclick="window.open('https://www.amazon.com/dp/B0DKCB5CTL');">
+  <i class="fas fa-gift"></i>
+  Get e-Book
+</button>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Open Silicon Valley. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  
+</body></html>
